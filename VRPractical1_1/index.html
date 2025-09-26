@@ -5,6 +5,7 @@
   <body>
     <a-scene>
       <!--Body -->
+    <a-entity>
       <a-box wireframe = "true" position="1 2 2" rotation="0 0 0" color="#4CC3D9" width = "6.5" height = "4" depth = "3.7"></a-box>
       <a-box  position="1 1.5 2" rotation="0 0 0" color="black" width = "4.5" height = "1.5" depth = "3"></a-box>
       <a-box  position="0 2.4 2" rotation="0 0 0" color="black" width = "2.5" height = "1.5" depth = "3"></a-box>
@@ -72,12 +73,56 @@
       <a-cylinder position="3.1 1.85 1" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" color="white" segments-radial="6" ></a-cylinder>
       </a-entity>
 
+      <a-entity>
+      <a-cylinder position="3.25 1.60 3.1" radius="0.1" height="0.3" width = "3" rotation = "0 0 90" color="orange" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.60 0.9" radius="0.1" height="0.3" width = "3" rotation = "0 0 90" color="orange" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+
 
       <!-- Back Headlights -->
       <a-entity position = "-4.25 -0.1 0">
       <a-cylinder position="3.1 1.85 3.2" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" color="red" segments-radial="6" ></a-cylinder>
       <a-cylinder position="3.1 1.85 0.8" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" color="red" segments-radial="6" ></a-cylinder>
       </a-entity>
+
+      <a-entity position = "-4.25 -0.2 0">
+      <a-cylinder position="3.1 1.85 3.2" radius="0.2" height="0.3" width = "3" rotation = "0 0 90" color="white" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.1 1.85 0.8" radius="0.2" height="0.3" width = "3" rotation = "0 0 90" color="white" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+      <!-- Mirror -->
+      <a-entity>
+        <a-cylinder position="1.9 2.2 3.4" radius="0.105" height="0.6" width = "3" rotation = "90 0 0" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.30 3.77" radius="0.1005" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.8 2.40 3.85" radius="0.10" height="0.2" width = "5" rotation = "0 90 55" color="#ADD8E6" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+      <a-entity position = "3.65 0 4" rotation = "0 180 0">
+        <a-cylinder position="1.9 2.2 3.4" radius="0.105" height="0.6" width = "3" rotation = "90 0 0" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.30 3.77" radius="0.1005" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="2.001 2.40 3.85" radius="0.10" height="0.2" width = "5" rotation = "0 90 55" color="#ADD8E6" segments-radial="6" ></a-cylinder>
+      </a-entity>
+      
+      <!-- License Plate -->
+      <a-box position="-1.2 1 2" rotation="0 90 0" color="yellow" width="1" height="0.35" depth = "0.3"></a-box>
+
+      <!-- Front Detail -->
+      <a-cylinder position="3.25 1.6 2.55" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 2.40" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 2.25" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 2.10" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.95" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.80" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.65" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.50" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" color="grey" segments-radial="6" ></a-cylinder>
+
+      <!-- Doors Attempt -->
+      <a-cylinder position="0.5 1.6 3.5" radius="0.05" height="0.45" width = "0.5" rotation = "180 0 90" color="grey" ></a-cylinder>
+
+  </a-entity>
       
       <a-plane position="0 0 -4" rotation="-90 0 0" color="#7BC8A4" width="50" height="50" ></a-plane>
       <a-sky color="#ECECEC"></a-sky>
