@@ -5,7 +5,7 @@
   <body>
     <a-scene>
       <!--Body -->
-    <a-entity>
+    <a-entity rotation = "0 90 0 position = "0 0 0">
       <a-box wireframe = "true" position="1 2 2" rotation="0 0 0" color="#4CC3D9" width = "6.5" height = "4" depth = "3.7"></a-box>
       <a-box  position="1 1.5 2" rotation="0 0 0" color = "black"width = "4.5" height = "1.5" depth = "3"></a-box>
       <a-box  position="0 2.4 2" rotation="0 0 0" color = "black" width = "2.5" height = "1.5" depth = "3"></a-box>
@@ -50,7 +50,7 @@
       </a-entity>
 
       <!-- Windows -->
-      <a-plane position="1.85 2.5 2" rotation="-40 90 0" color="#ADD8E6" width="2.7" height="1.4" ></a-plane>
+      <a-plane position="1.86 2.5 2" rotation="-40 90 0" color="#ADD8E6" width="2.7" height="1.4" ></a-plane>
       <a-plane position="0.7 2.5 3.54" rotation="0 0 0" color="#ADD8E6" width="1" height="0.9" ></a-plane>
       <a-plane position="1.05 2.3 3.54" rotation="0 0 38" color="#ADD8E6" width="1" height="0.9" ></a-plane>
       <a-plane position="0.3 1.8 3.545" rotation="0 0 0" color="black" width="3" height="0.95" ></a-plane>
@@ -95,14 +95,14 @@
       <a-entity>
         <a-cylinder position="1.9 2.2 3.4" radius="0.105" height="0.6" width = "3" rotation = "90 0 0" color="black" segments-radial="6" ></a-cylinder>
         <a-cylinder position="1.9 2.30 3.77" radius="0.1005" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
-        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" src = "gloss.jpg" segments-radial="6" ></a-cylinder>
         <a-cylinder position="1.8 2.40 3.85" radius="0.10" height="0.2" width = "5" rotation = "0 90 55" src = "window.jpg" segments-radial="6" ></a-cylinder>
       </a-entity>
 
       <a-entity position = "3.65 0 4" rotation = "0 180 0">
         <a-cylinder position="1.9 2.2 3.4" radius="0.105" height="0.6" width = "3" rotation = "90 0 0" color="black" segments-radial="6" ></a-cylinder>
         <a-cylinder position="1.9 2.30 3.77" radius="0.1005" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
-        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" src = "gloss.jpg" segments-radial="6" ></a-cylinder>
         <a-cylinder position="2.001 2.40 3.85" radius="0.10" height="0.2" width = "5" rotation = "0 90 55" src = "window.jpg" segments-radial="6" ></a-cylinder>
       </a-entity>
       
@@ -218,11 +218,599 @@
 
     </a-entity>
 
+            <!-- Tires Extra Detail -->
+    <a-entity position = "1.6 1.4 -0.47" rotation = "0 -90 0">
+
+      <a-entity>
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+     </a-entity>
+
+      <a-entity rotation = "0 0 180" position = "4.95 1.2 0.04">
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+      </a-entity>
+
+      <a-sphere position="2.5 0.65 3.56" radius="0.15" src = "texture.jpg"></a-sphere>
+
+    </a-entity>
+
 
   </a-entity>
+
+  <!--2nd Car -->
+  <!--2nd Car -->
+  <!--2nd Car -->
+  <!--2nd Car -->
+
+  <a-entity rotation = "0 -90 0" position = "11 0 -9">
+      <a-box wireframe = "true" position="1 2 2" rotation="0 0 0" color="#4CC3D9" width = "6.5" height = "4" depth = "3.7"></a-box>
+      <a-box  position="1 1.5 2" rotation="0 0 0" color = "black"width = "4.5" height = "1.5" depth = "3"></a-box>
+      <a-box  position="0 2.4 2" rotation="0 0 0" color = "black" width = "2.5" height = "1.5" depth = "3"></a-box>
+      <a-box  position="1.2 2.1 2" rotation="0 0 220" color = "black" width = "1.5" height = "1.5" depth = "3"></a-box>
+      <!--Wheels -->
+      <a-cylinder position="-0.7 0.64 3.3" radius="0.6" height="0.5" rotation = "90 0 0"src = "tires.jpg"></a-cylinder>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360"  material="color: black" position = "-0.7 0.64 3.5"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "-0.7 0.64 3"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.03; arc: 360"  material="color: silver" position = "-0.7 0.64 3.55"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.03; arc: 360"  material="color: silver" position = "-0.7 0.64 3"></a-entity>
+      <a-cylinder position="-0.7 0.64 3.32" radius="0.52" height="0.5" rotation = "90 0 0"color="black"></a-cylinder>
+
+      <a-cylinder position="-0.7 0.64 0.7" radius="0.6" height="0.5" rotation = "90 0 0"src = "tires.jpg"></a-cylinder>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "-0.7 0.64 1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "-0.7 0.64 0.44"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.035; arc: 360"  material="color: silver" position = "-0.7 0.64 1.04"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.035; arc: 360"  material="color: silver" position = "-0.7 0.64 0.44"></a-entity>
+      <a-cylinder position="-0.7 0.64 0.69" radius="0.52" height="0.5" rotation = "90 0 0"color="black"></a-cylinder>
+
+      <a-cylinder position="2.5 0.64 0.7" radius="0.6" height="0.5" rotation = "90 0 0" src = "tires.jpg"></a-cylinder>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "2.5 0.64 1"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "2.5 0.64 0.44"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.035; arc: 360"  material="color: silver" position = "2.5 0.64 1.04"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.035; arc: 360"  material="color: silver" position = "2.5 0.64 0.44"></a-entity>
+      <a-cylinder position="2.5 0.64 0.69" radius="0.52" height="0.5" rotation = "90 0 0"color="black"></a-cylinder>
+
+      <a-cylinder position="2.5 0.64 3.3" radius="0.6" height="0.5" rotation = "90 0 0" src = "tires.jpg"></a-cylinder>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "2.5 0.64 3.5"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "2.5 0.64 3"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.035; arc: 360"  material="color: silver" position = "2.5 0.64 3.55"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.035; arc: 360"  material="color: silver" position = "2.5 0.64 3"></a-entity>
+      <a-cylinder position="2.5 0.64 3.32" radius="0.52" height="0.5" rotation = "90 0 0"color="black"></a-cylinder>
+
+      <!-- Back Tire -->
+      <a-entity position = "-4.85 1.35 4.5" rotation = "0 90 0">
+      <a-cylinder position="2.5 0.64 3.3" radius="0.6" height="0.5" rotation = "90 0 0"src = "tires.jpg"></a-cylinder>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "2.5 0.64 3.5"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.7; radiusTubular: 0.05; arc: 360" material="color: black" position = "2.5 0.64 3"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.03; arc: 360"  material="color: silver" position = "2.5 0.64 3.55"></a-entity>
+      <a-entity geometry="primitive: torus; radius: 0.6; radiusTubular: 0.03; arc: 360"  material="color: silver" position = "2.5 0.64 3"></a-entity>
+      <a-cylinder position="2.5 0.64 3.32" radius="0.52" height="0.5" rotation = "90 0 0"color="grey"></a-cylinder>
+      </a-entity>
+
+      <!-- Windows -->
+      <a-plane position="1.86 2.5 2" rotation="-40 90 0" color="#ADD8E6" width="2.7" height="1.4" ></a-plane>
+      <a-plane position="0.7 2.5 3.54" rotation="0 0 0" color="#ADD8E6" width="1" height="0.9" ></a-plane>
+      <a-plane position="1.05 2.3 3.54" rotation="0 0 38" color="#ADD8E6" width="1" height="0.9" ></a-plane>
+      <a-plane position="0.3 1.8 3.545" rotation="0 0 0" color="black" width="3" height="0.95" ></a-plane>
+      <a-plane position="-0.5 2.5 3.54" rotation="0 0 0" color="#ADD8E6" width="1" height="0.9" ></a-plane>
+      <a-plane position="-1.27 2.5 2" rotation="0 90 0" color="#ADD8E6" width="2.5" height="1" material="side: double" ></a-plane>
+
+
+      <a-entity position = "0 0 -3.05" rotation = "0 0 0">
+        <a-plane position="0.7 2.5 3.54" rotation="0 0 0" color="#ADD8E6" width="1" height="0.9" material="side: double" ></a-plane>
+        <a-plane position="1.05 2.3 3.54" rotation="0 0 38" color="#ADD8E6" width="1" height="0.9" material="side: double" ></a-plane>
+        <a-plane position="-0.5 2.5 3.54" rotation="0 0 0" color="#ADD8E6" width="1" height="0.9" material="side: double" ></a-plane>
+        <a-plane position="0.3 1.8 3.53" rotation="0 0 0" color="black" width="3" height="0.95" material="side: double" ></a-plane>
+      </a-entity>
+
+      <!-- Head -->
+      <a-cylinder position="2.35 1.2 2" radius="1.55" height="0.6" width = "1" rotation = "0 0 0" color="black"></a-cylinder>
+
+      <a-entity>
+      <a-cylinder position="3.1 1.85 3" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" src = "light.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.1 1.85 1" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" src = "light.jpg" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+      <a-entity>
+      <a-cylinder position="3.25 1.60 3.1" radius="0.1" height="0.3" width = "3" rotation = "0 0 90" src = "orange.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.60 0.9" radius="0.1" height="0.3" width = "3" rotation = "0 0 90" src = "orange.jpg" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+
+
+      <!-- Back Headlights -->
+      <a-entity position = "-4.25 -0.1 0">
+      <a-cylinder position="3.1 1.85 3.2" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" src = "redlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.1 1.85 0.8" radius="0.2" height="0.6" width = "3" rotation = "0 0 90" src = "redlight.jpg" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+      <a-entity position = "-4.25 -0.2 0">
+      <a-cylinder position="3.1 1.85 3.2" radius="0.2" height="0.3" width = "3" rotation = "0 0 90" src = "light.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.1 1.85 0.8" radius="0.2" height="0.3" width = "3" rotation = "0 0 90" src = "light.jpg" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+      <!-- Mirror -->
+      <a-entity>
+        <a-cylinder position="1.9 2.2 3.4" radius="0.105" height="0.6" width = "3" rotation = "90 0 0" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.30 3.77" radius="0.1005" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" src = "gloss.jpg" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.8 2.40 3.85" radius="0.10" height="0.2" width = "5" rotation = "0 90 55" src = "window.jpg" segments-radial="6" ></a-cylinder>
+      </a-entity>
+
+      <a-entity position = "3.65 0 4" rotation = "0 180 0">
+        <a-cylinder position="1.9 2.2 3.4" radius="0.105" height="0.6" width = "3" rotation = "90 0 0" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.30 3.77" radius="0.1005" height="0.3" width = "5" rotation = "0 90 55" color="black" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="1.9 2.40 3.85" radius="0.15" height="0.3" width = "5" rotation = "0 90 55" src = "gloss.jpg" segments-radial="6" ></a-cylinder>
+        <a-cylinder position="2.001 2.40 3.85" radius="0.10" height="0.2" width = "5" rotation = "0 90 55" src = "window.jpg" segments-radial="6" ></a-cylinder>
+      </a-entity>
+      
+      <!-- License Plate -->
+      <a-box position="-1.13 1 2" rotation="0 90 0" src = "license2.jpg" width="1" height="0.35" depth = "0.3"></a-box>
+
+      <!-- Front Detail -->
+      <a-cylinder position="3.25 1.6 2.55" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 2.40" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 2.25" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 2.10" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.95" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.80" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.65" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+      <a-cylinder position="3.25 1.6 1.50" radius="0.05" height="0.45" width = "0.1" rotation = "0 0 0" src = "headlight.jpg" segments-radial="6" ></a-cylinder>
+
+      <!-- Doors Attempt -->
+    <a-entity>
+      <a-cylinder position="0.6 2 3.5" radius="0.07" height="0.45" width = "0.8" rotation = "180 0 90" src = "gloss.jpg" ></a-cylinder>
+      <a-cylinder position="0.6 2 3.55" radius="0.04" height="0.35" width = "0.5" rotation = "180 0 90" src="grey.png" ></a-cylinder>
+      <a-sphere position="0.4 2 3.5" radius="0.085" src = "gloss.jpg"></a-sphere>
+      <a-sphere position="0.4 2 3.55" radius="0.05" src = "grey.png"></a-sphere>
+
+      <a-cylinder position="-0.75 2 3.5" radius="0.07" height="0.45" width = "0.8" rotation = "180 0 90" src = "gloss.jpg" ></a-cylinder>
+      <a-cylinder position="-0.75 2 3.55" radius="0.04" height="0.35" width = "0.5" rotation = "180 0 90" src="grey.png" ></a-cylinder>
+      <a-sphere position="-0.95 2 3.5" radius="0.085" src = "gloss.jpg"></a-sphere>
+      <a-sphere position="-0.95 2 3.55" radius="0.05" src="grey.png"></a-sphere>
+    </a-entity>
+
+    <a-entity position = "-0.15 0 4" rotation = "0 -180 0">
+      <a-cylinder position="0.6 2 3.5" radius="0.07" height="0.45" width = "0.8" rotation = "180 0 90" src = "gloss.jpg" ></a-cylinder>
+      <a-cylinder position="0.6 2 3.55" radius="0.04" height="0.35" width = "0.5" rotation = "180 0 90" src="grey.png" ></a-cylinder>
+      <a-sphere position="0.4 2 3.5" radius="0.085" src = "gloss.jpg"></a-sphere>
+      <a-sphere position="0.4 2 3.55" radius="0.05" src="grey.png"></a-sphere>
+
+      <a-cylinder position="-0.75 2 3.5" radius="0.07" height="0.45" width = "0.8" rotation = "180 0 90" src = "gloss.jpg" ></a-cylinder>
+      <a-cylinder position="-0.75 2 3.55" radius="0.04" height="0.35" width = "0.5" rotation = "180 0 90" src="grey.png" ></a-cylinder>
+      <a-sphere position="-0.95 2 3.5" radius="0.085" src = "gloss.jpg" ></a-sphere>
+      <a-sphere position="-0.95 2 3.55" radius="0.05" src="grey.png""></a-sphere>
+    </a-entity>
+
+    <!-- Tires Extra Detail -->
+    <a-entity>
+
+      <a-entity>
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+     </a-entity>
+
+      <a-entity rotation = "0 0 180" position = "4.95 1.2 0.04">
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+      </a-entity>
+
+      <a-sphere position="2.5 0.65 3.56" radius="0.15" src = "texture.jpg"></a-sphere>
+
+    </a-entity>
+ <!-- Tires Extra Detail -->
+    <a-entity position = "4.99 0 4" rotation = "0 180 0">
+
+      <a-entity>
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+     </a-entity>
+
+      <a-entity rotation = "0 0 180" position = "4.95 1.2 0.04">
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+      </a-entity>
+
+      <a-sphere position="2.5 0.65 3.56" radius="0.15" src = "texture.jpg"></a-sphere>
+
+    </a-entity>
+ <!-- Tires Extra Detail -->
+    <a-entity position = "1.8 0 4" rotation = "0 180 0">
+
+      <a-entity>
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+     </a-entity>
+
+      <a-entity rotation = "0 0 180" position = "4.95 1.2 0.04">
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+      </a-entity>
+
+      <a-sphere position="2.5 0.65 3.56" radius="0.15" src = "texture.jpg"></a-sphere>
+
+    </a-entity>
+
+        <!-- Tires Extra Detail -->
+    <a-entity position = "-3.16 0 0" rotation = "0 0 0">
+
+      <a-entity>
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+     </a-entity>
+
+      <a-entity rotation = "0 0 180" position = "4.95 1.2 0.04">
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+      </a-entity>
+
+      <a-sphere position="2.5 0.65 3.56" radius="0.15" src = "texture.jpg"></a-sphere>
+
+    </a-entity>
+
+            <!-- Tires Extra Detail -->
+    <a-entity position = "1.6 1.4 -0.47" rotation = "0 -90 0">
+
+      <a-entity>
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+     </a-entity>
+
+      <a-entity rotation = "0 0 180" position = "4.95 1.2 0.04">
+        <a-cylinder position= "2.75 0.8 3.38" radius="0.32" height="0.18" rotation = "0 0 45" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.50 0.90 3.38" radius="0.32" height="0.20" rotation = "0 0 90" src="grey.png"></a-cylinder>
+        <a-cylinder position= "2.2 0.81 3.38" radius="0.32" height="0.20" rotation = "0 0 135" src="grey.png"></a-cylinder>
+      </a-entity>
+
+      <a-sphere position="2.5 0.65 3.56" radius="0.15" src = "texture.jpg"></a-sphere>
+
+    </a-entity>
+
+
+  </a-entity>
+
+
+    <!-- Trees -->
+    <a-entity>
+     <a-entity position = "-3 0 -7" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+  <a-entity position = "7 0 5" rotation = "0 145 0">
+     <a-entity position = "-6.5 0 0" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+  <a-entity position = "25 0 -2" rotation = "0 330 0">
+     <a-entity position = "-6.5 0 0" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+  <a-entity position = "-6 0 -3" rotation = "0 330 0">
+     <a-entity position = "-6.5 0 0" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+
+  <a-entity position = "-10 0 9" rotation = "0 140 0">
+     <a-entity position = "-6.5 0 0" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+<a-entity position = "-10 0.5 -20" rotation = "0 140 0">
+     <a-entity position = "-6.5 0 0" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+
+  <a-entity position = "10 0.5 -20" rotation = "0 140 0">
+     <a-entity position = "-6.5 0 0" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "0 0 1" rotation = "0 90 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-4 0 2" rotation = "0 35 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "-10 0 10" rotation = "0 320 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "2 0 6" rotation = "0 78 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+  </a-entity>
+
+
+
+
+
+    <a-entity position = "12 0 -3" rotation = "0 200 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+    <a-entity position = "17 0 13" rotation = "0 45 0">
+      <a-sphere position="0 4 -5" radius="1.25" src = "snow.jpg"></a-sphere>
+      <a-sphere position="-1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-sphere position="1 3 -5" radius="1.25" src = "snow.jpg" ></a-sphere>
+      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5" src = "bark.jpg"></a-cylinder>
+    </a-entity>
+
+     <!-- Snowman -->
+      <a-entity position = "-2 0 -5.5" rotation = "0 75 0"> 
+        <!-- Body -->
+        <a-sphere position="0 0.5 -0.5" radius="1.25" src = "snow.jpg"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1.05" src = "snow.jpg"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius=".85" src = "snow.jpg"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" src= "stick.webp" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" src = "stick.webp" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-entity>
+
+      <!-- Snowman -->
+      <a-entity position = "-2 0 -3" rotation = "0 100 0" scale="0.5 0.5 0.5" > 
+        <!-- Body -->
+        <a-sphere position="0 0.5 -0.5" radius="1.25" src = "snow.jpg"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1.05" src = "snow.jpg"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius="0.85" src = "snow.jpg"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" src= "stick.webp" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" src = "stick.webp" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-entity>
+
+      <!-- Snowman -->
+      <a-entity position = "13 0 -4" rotation = "0 -135 0" scale="0.5 0.5 0.5" > 
+        <!-- Body -->
+        <a-sphere position="0 0.5 -0.5" radius="1.25" src = "snow.jpg"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1.05" src = "snow.jpg"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius="0.85" src = "snow.jpg"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" src= "stick.webp" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" src = "stick.webp" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+      </a-entity>
+
+      
       
       <a-plane src="snoww.jpg" side="double" repeat="10 -10" position="0 -0.01 -4" rotation="-90 0 0" width="50" height="50"></a-plane>
-      <a-plane src="road.webp" side="double" repeat="1 10"position="0 0.1 -4" rotation="-90 0 0"width="5" height="50"></a-plane>
+      <a-plane src="road.webp" side="double" repeat="1 10"position="2.1 0.1 -4" rotation="-90 0 0"width="5" height="50"></a-plane>
+      <a-plane src="road.webp" side="double" repeat="1 10"position="9 0.1 -4" rotation="-90 0 0"width="5" height="50"></a-plane>
 
       <a-sky src = "sunset.jpg" rotation="0 -90 0" side = "double" ></a-sky>
        <!-- Camera is added so that you do not "spawn" at the origin -->
