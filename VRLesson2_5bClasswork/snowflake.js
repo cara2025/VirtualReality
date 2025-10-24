@@ -3,10 +3,10 @@ class Snowflake{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dy = 0.1;
+    this.dy = 0.4;
     this.obj = document.createElement("a-sphere");
-    this.obj.setAttribute("radius",0.1);
-    this.obj.setAttribute("opacity",0.65);
+    this.obj.setAttribute("radius",0.4);
+    this.obj.setAttribute("opacity",0.75);
     this.obj.setAttribute("position",{x:x,y:y,z:z});
     scene.append( this.obj );
   }
