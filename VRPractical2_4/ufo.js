@@ -10,6 +10,8 @@ class Ufo{
         this.y = y;
         this.z = z;
         this.dy = rnd(0.2, 1);
+        this.a = 0;
+        this.da = rnd(0.5,2);
  
         this.obj = document.createElement("a-entity");
 
@@ -131,9 +133,92 @@ class Ufo{
 
         let light1 = document.createElement("a-dodecahedron");
         light1.setAttribute("radius", 0.5)
-        light1.setAttribute("position", "0 0.5 5.5");
+        light1.setAttribute("height", 0.2);
+        light1.setAttribute("position", "0 0.35 3.85");
+        light1.setAttribute("color", "yellow");
+        light1.setAttribute("opacity", 0.75);
         this.obj.append(light1);
+
+        let light2 = document.createElement("a-dodecahedron");
+        light2.setAttribute("radius", 0.5)
+        light2.setAttribute("height", 0.2);
+        light2.setAttribute("position", "3.3 0.35 -1.9");
+        light2.setAttribute("color", "yellow");
+        light2.setAttribute("opacity", 0.75);
+        this.obj.append(light2);
+
+        let light3 = document.createElement("a-dodecahedron");
+        light3.setAttribute("radius", 0.5)
+        light3.setAttribute("height", 0.2);
+        light3.setAttribute("position", "-3.3 0.35 -1.9");
+        light3.setAttribute("color", "yellow");
+        light3.setAttribute("opacity", 0.75);
+        this.obj.append(light3);
+
+        let light4 = document.createElement("a-dodecahedron");
+        light4.setAttribute("radius", 0.3)
+        light4.setAttribute("height", 0.2);
+        light4.setAttribute("position", "-3.75 0.35 1.75");
+        light4.setAttribute("color", "yellow");
+        light4.setAttribute("opacity", 0.75);
+        this.obj.append(light4);
+
+        let light6 = document.createElement("a-dodecahedron");
+        light6.setAttribute("radius", 0.3)
+        light6.setAttribute("height", 0.2);
+        light6.setAttribute("position", "3.75 0.35 1.75");
+        light6.setAttribute("color", "yellow");
+        light6.setAttribute("opacity", 0.75);
+        this.obj.append(light6);
+
+        let light7 = document.createElement("a-dodecahedron");
+        light7.setAttribute("radius", 0.3)
+        light7.setAttribute("height", 0.2);
+        light7.setAttribute("position", "0 0.35 -4.1");
+        light7.setAttribute("color", "yellow");
+        light7.setAttribute("opacity", 0.75);
+        this.obj.append(light7);
+
+        let antenna = document.createElement("a-cylinder");
+        antenna.setAttribute("height", 2);
+        antenna.setAttribute("radius", 0.2);
+        antenna.setAttribute("color", "yellow");
+        antenna.setAttribute("position", "1 2.5 0");
+        antenna.setAttribute("rotation", "0 0 -45");
+        this.obj.append(antenna);
+
+        let antenna2 = document.createElement("a-cylinder");
+        antenna2.setAttribute("height", 2);
+        antenna2.setAttribute("radius", 0.2);
+        antenna2.setAttribute("color", "yellow");
+        antenna2.setAttribute("position", "-1 2.5 0");
+        antenna2.setAttribute("rotation", "0 0 45");
+        this.obj.append(antenna2);
+        
+
+        let light5 = document.createElement("a-dodecahedron");
+        light5.setAttribute("radius", 0.3)
+        light5.setAttribute("height", 0.2);
+        light5.setAttribute("position", "0 3.2 0");
+        light5.setAttribute("color", "red");
+        light5.setAttribute("opacity", 0.75);
+        this.obj.append(light5);
+
+
+    
 
         this.obj.setAttribute("position", {x:x,y:y,z:z});
         scene.append(this.obj);
-}}
+}
+    invade(){
+        if(this.y > 0){
+            this.y -= this.dy;
+            this.obj.setAttribute("position", {x:this.x, y:this.y, z:this.z});
+        } else {
+            this.y = 0;
+            this.obj.setAttribute("position", {x:this.x, y:this.y, z:this.z});
+        }
+        this.a += this.da;
+        this.obj.setAttribute("rotation", {x:0, y:this.a, z:0});
+    }
+}
