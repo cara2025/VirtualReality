@@ -12,8 +12,8 @@ class Rocket{
         this.y = y;
         this.z = z;
         this.a = 0;
-        this.da = rnd(1, 3);
-        this.dy = rnd(0.5, 1.5);
+        this.da = rnd(1.5, 3.5);
+        this.dy = rnd(0.5, 1);
  
 
         let body = document.createElement("a-cylinder");

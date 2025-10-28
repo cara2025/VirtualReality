@@ -20,13 +20,14 @@ window.addEventListener("DOMContentLoaded",function() {
   }
 
 
-  //for(let i = 0; i < 10; i++){
-    //let x = rnd(-20,20);
+  for(let i = 0; i < 10; i++){
+    let x = rnd(-20,20);
     //let y = rnd(20,50);
-    //let z = rnd(-20,20);
-    //let u = new Ufo(x,y,z);
-    //ufos.push(u);
-  //}
+    let y = rnd(5,5)
+    let z = rnd(-20,20);
+    let u = new Ufo(x,y,z);
+    ufos.push(u);
+  }
 
 
   loop();
