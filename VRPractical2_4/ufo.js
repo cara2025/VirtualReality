@@ -92,7 +92,7 @@ class Ufo{
         let legdetail3 = document.createElement("a-sphere");
         legdetail3.setAttribute("radius", 0.55);
         legdetail3.setAttribute("height", 0.2);
-        legdetail3.setAttribute("position", " 3.45 -3.35 -0.45");
+        legdetail3.setAttribute("position", " 3.45 -3.35 -0.6");
         legdetail3.setAttribute("color", "black");
         this.obj.append(legdetail3);
 
@@ -103,6 +103,36 @@ class Ufo{
         tube.setAttribute("position", "-3.15 -3.1 -0.5");
         tube.setAttribute("rotation", "0 0 -58");
         this.obj.append(tube);
+
+        let tube2 = document.createElement("a-cylinder");
+        tube2.setAttribute("height", 0.13);
+        tube2.setAttribute("radius", 0.7);
+        tube2.setAttribute("color", "gray");
+        tube2.setAttribute("position", "3.35 -3.35 -0.6");
+        tube2.setAttribute("rotation", "0 0 55");
+        this.obj.append(tube2);
+
+        let tube3 = document.createElement("a-cylinder");
+        tube3.setAttribute("height", 0.13);
+        tube3.setAttribute("radius", 0.7);
+        tube3.setAttribute("color", "gray");
+        tube3.setAttribute("position", "0 -3.3 2.75");
+        tube3.setAttribute("rotation", "-60 0 0");
+        this.obj.append(tube3);
+
+        let biglight = document.createElement("a-cone");
+        biglight.setAttribute("height", 7);
+        biglight.setAttribute("radius-bottom", 5);
+        biglight.setAttribute("color", "yellow");
+        biglight.setAttribute("position", "0 -6 0");
+        biglight.setAttribute("rotation", "0 0 0");
+        biglight.setAttribute("opacity", 0.5)
+        this.obj.append(biglight);
+
+        let light1 = document.createElement("a-dodecahedron");
+        light1.setAttribute("radius", 0.5)
+        light1.setAttribute("position", "0 0.5 5.5");
+        this.obj.append(light1);
 
         this.obj.setAttribute("position", {x:x,y:y,z:z});
         scene.append(this.obj);
