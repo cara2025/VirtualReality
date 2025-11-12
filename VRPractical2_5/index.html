@@ -2,6 +2,11 @@
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="script.js"></script>
+    <script src = "enter.js"></script>
+    <script src = "ferriswheel.js"></script>
+    <script src = "wall.js"></script>
+    <script src = "coin.js"></script>
+    <script src = "wallrotation.js"></script>
   </head>
   <body>
     <a-scene>
@@ -9,11 +14,485 @@
         <!-- Challenge
              Upload a picture to use as the texture for the walls of your maze if you want
         -->
+
+
       </a-assets>
-      <a-plane position="0 0 0" rotation="-90 0 0" width="150" height="150" color="#AAFFAA"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="750" height="750" src = "grasstexture.avif" repeat = "25 25"></a-plane>
       
       
-      <a-sky color="blue"></a-sky>
-      <a-camera position="0 1.3 0"> 
-      </a-camera>
+    <a-sky rotation="0 -90 0" side = "double" src = "sunset.jpg"></a-sky>
+      <!-- LIGHTING TEST -->
+    <a-entity light="type: ambient; color: #ffffff; intensity: 0.6"></a-entity>
+    <a-entity light="type: directional; color: #ffdd66; intensity: 1; position: 0 20 0"></a-entity>
+      
+    <a-camera position="60 2.3 200"> 
+    </a-camera>
+
+
+    <!---- <a-camera wasd-controls="acceleration: 100; fly: true" position=" 50 50 100 ">
+      </a-camera>--->
+
+
+      <!-- Entrance -->
+       <!-- Entrance -->
+        <!-- Entrance -->
+         <!-- Entrance -->
+
+<!--
+ <a-entity id="enterTemplatePillar">
+      <a-entity>
+          <a-box class="left-tower" height="12" position="-6 0 0" color="#F0ECA1" src = "yellow.jpg" repeat = "1 1"></a-box>
+          <a-box class="left-tower-red" height="0.25" width="1.3" depth="1.3" position="-6 6 0" color="#B00000"></a-box>
+          <a-box class="left-tower-red" height="0.25" width="1.3" depth="1.3" position="-6 0 0" color="#B00000"></a-box>
+          <a-sphere radius="0.1" position="-6 6 0.6" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.4 6 0.6" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.57 6 0.6" color="yellow"></a-sphere> 
+          <a-sphere radius="0.1" position="-6.63 6 0.35" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.63 6 -0.05" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.63 6 -0.45" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.36 6 -0.45" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.36 6 -0.05" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.36 6 0.35" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.6 6 -0.65" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6 6 -0.65" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.45 6 -0.65" color="yellow"></a-sphere>
+
+          <a-box height="6" width="0.1" depth="0.1" position="-6.55 2.9 0.5" color="#B00000"></a-box>
+          <a-box height="6" width="0.1" depth="0.1" position="-5.45 2.9 0.5" color="#B00000"></a-box>
+          <a-box height="6" width="0.1" depth="0.1" position="-6.55 2.9 -.5" color="#B00000"></a-box>
+          <a-box height="6" width="0.1" depth="0.1" position="-5.45 2.9 -.5" color="#B00000"></a-box>
+
+              <a-entity>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+              <a-entity position = "0 0 -1">
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+              <a-entity rotation = "0 90 0" position = "-6 0 -6">
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+              <a-entity rotation = "0 90 0" position = "-7.03 0 -6">
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+          
+          <a-box height="2" width="0.1" depth="0.1" position="-6 6.35 0" src = "greytexture.webp"></a-box>
+
+
+          <a-triangle height="0.05" width="1.35" depth="1.35" position="-5.5 6.95 0" src = "redflag.jpg" side = "double"rotation = "0 0 -90"></a-triangle>
+        
+          </a-entity>
+
+
+
+
+
+                                                                    
+                                                                  
+
+
+
+
+
+
+
+        <a-entity position = "12 0 0">
+          <a-box class="left-tower" height="12" position="-6 0 0" color="#F0ECA1" src = "yellow.jpg" repeat = "1 1"></a-box>
+          
+          <a-box class="left-tower-red" height="0.25" width="1.3" depth="1.3" position="-6 0 0" color="#B00000"></a-box>
+          <a-entity>
+          <a-box class="left-tower-red" height="0.25" width="1.3" depth="1.3" position="-6 6 0" color="#B00000"></a-box>
+          <a-sphere radius="0.1" position="-6 6 0.6" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.4 6 0.6" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.57 6 0.6" color="yellow"></a-sphere> 
+          <a-sphere radius="0.1" position="-6.63 6 0.35" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.63 6 -0.05" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.63 6 -0.45" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.36 6 -0.45" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.36 6 -0.05" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.36 6 0.35" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-5.6 6 -0.65" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6 6 -0.65" color="yellow"></a-sphere>
+          <a-sphere radius="0.1" position="-6.45 6 -0.65" color="yellow"></a-sphere>
+          </a-entity>
+
+          <a-box height="6" width="0.1" depth="0.1" position="-6.55 2.9 0.5" color="#B00000"></a-box>
+          <a-box height="6" width="0.1" depth="0.1" position="-5.45 2.9 0.5" color="#B00000"></a-box>
+          <a-box height="6" width="0.1" depth="0.1" position="-6.55 2.9 -.5" color="#B00000"></a-box>
+          <a-box height="6" width="0.1" depth="0.1" position="-5.45 2.9 -.5" color="#B00000"></a-box>
+
+              <a-entity>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+              <a-entity position = "0 0 -1">
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+              <a-entity rotation = "0 90 0" position = "-6 0 -6">
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+              <a-entity rotation = "0 90 0" position = "-7.03 0 -6">
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 5.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 4.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 3.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 2.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 1.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 45" color="#B00000"></a-box>
+          <a-box height ="0.1" width= "1.55" depth = "0.1" position = "-6 0.25 0.5" rotation = "0 0 -45" color="#B00000"></a-box>
+
+              </a-entity>
+
+          
+          <a-box height="2" width="0.1" depth="0.1" position="-6 6.35 0" src = "greytexture.webp"></a-box>
+
+
+          <a-triangle height="0.05" width="1.35" depth="1.35" position="-5.5 6.95 0" src = "redflag.jpg" side = "double"rotation = "0 0 -90"></a-triangle>
+        
+        </a-entity>
+
+
+
+
+                                                                   
+
+        <a-box height="11" width="0.1" depth="0.1" position="0 5 -0.5" rotation = "0 0 90" color="#B00000"></a-box>
+        <a-box height="11" width="0.1" depth="0.1" position="0 4.65 -0.5" rotation = "0 0 90" color="#B00000"></a-box>
+
+        <a-box height="10" width = "0.35" depth = "0.25"position="0 0 -.5" color="#B00000" repeat = "1 1"></a-box>
+
+        <a-box height="11" width="0.2" depth="0.2" position="0 2.37 -0.5" rotation = "0 0 90" color="#B00000"></a-box>
+        <a-box height="11" width="0.2" depth="0.25" position="0 0 -0.5" rotation = "0 0 90" color="#B00000"></a-box>
+        <a-box height="11" width="2.5" depth="0.2" position="0 1 -0.5" rotation = "0 0 90" src = "gatetexture.jpg"></a-box>
+
+        <a-entity>
+        <a-box height="6" width="0.05" depth="0.1" position="0.35 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="0.65 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="0.95 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="1.25 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="1.55 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="1.85 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="2.15 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="2.45 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="2.75 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.05 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.35 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.65 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.95 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="4.25 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="4.55 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="4.85 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="5.15 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        </a-entity>
+
+
+        <a-entity rotation = "0 180 0" position = "0 0 -1">
+        <a-box height="6" width="0.05" depth="0.1" position="0.35 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="0.65 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="0.95 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="1.25 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="1.55 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="1.85 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="2.15 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="2.45 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="2.75 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.05 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.35 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.65 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="3.95 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="4.25 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="4.55 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="4.85 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        <a-box height="6" width="0.05" depth="0.1" position="5.15 1.9 -0.5" rotation = "0 0 0" color="#B00000"></a-box>
+        </a-entity>
+
+
+        <a-torus color="#B00000" arc="180"radius="2" radius-tubular="0.1"position="0 5 -0.5"rotation="0 0 0" scale=" 2.4 1 1"></a-torus>
+        <a-torus color="#579fa8" arc="180"radius="2" radius-tubular="0.05"position="0 4.85 -0.2"rotation="0 0 0" scale=" 2.4 1 1"></a-torus>
+        <a-torus color="#fde602" arc="180"radius="2" radius-tubular="0.01"position="0 5.01 -0.2"rotation="0 0 0" scale=" 2.5 1 1"></a-torus>
+        <a-torus color="#fde602" arc="180"radius="2" radius-tubular="0.01"position="0 4.77 -0.2"rotation="0 0 0" scale=" 2.25 1 1"></a-torus>
+
+        <a-entity>
+        <a-box height = "6.5" width ="1.85" depth ="1.7 "position = "-9.5 0 0" src = "creamwood.jpg" repeat = "10 10 "></a-box>
+        <a-box height="2" width = "1.2" depth = "0.1"position = "-9.5 2 0.85" src = "poster.jpg"></a-box>
+
+        <a-box class="left-tower-red" height="0.2" width="2.5" depth="2" position="-9.5 3.45 0" color="#B00000"></a-box>
+        <a-box class="left-tower-red" height="0.2" width="2.5" depth="2" position="-9.5 0 0" src = "floor.jpg"></a-box>
+
+        <a-entity>
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+        <a-entity rotation = "0 90 0" position = "-9.25 0 -9.5" >
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+
+        <a-entity rotation = "0 90 0" position = "-11.75 0 -9.5" >
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+
+
+        <a-entity position = "0 0 -2">
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+        <a-cone height = "1" src = "stripes.webp" scale ="1.25 1 1 " position = "-9.5 4 0"></a-cone>
+        <a-box height="1.2" width="0.1" depth="0.1" position="-9.5 4.5 0" src = "greytexture.webp"></a-box>
+        <a-triangle height="0.05" width="1.35" depth="1.35" position="-9 4.85 0" src = "redflag.jpg" side = "double"rotation = "0 0 -90" scale = "0.5 1 1"></a-triangle>
+
+        </a-entity>        
+
+
+         <a-entity position = "19 0 0">
+        <a-box height = "6.5" width ="1.85" depth ="1.7 "position = "-9.5 0 0" src = "creamwood.jpg" repeat = "10 10 "></a-box>
+        <a-box height="2" width = "1.2" depth = "0.1"position = "-9.5 2 0.85" src = "poster.jpg"></a-box>
+
+        <a-box class="left-tower-red" height="0.2" width="2.5" depth="2" position="-9.5 3.45 0" color="#B00000"></a-box>
+        <a-box class="left-tower-red" height="0.2" width="2.5" depth="2" position="-9.5 0 0" src = "floor.jpg"></a-box>
+
+        <a-entity>
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+        <a-entity rotation = "0 90 0" position = "-9.25 0 -9.5" >
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+
+        <a-entity rotation = "0 90 0" position = "-11.75 0 -9.5" >
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+
+
+        <a-entity position = "0 0 -2">
+        <a-sphere radius="0.06" position="-9.5 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-9.8 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.1 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-10.4 3.45 1" color="yellow"></a-sphere>
+
+        <a-sphere radius="0.06" position="-9.2 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.9 3.45 1" color="yellow"></a-sphere>
+        <a-sphere radius="0.06" position="-8.6 3.45 1" color="yellow"></a-sphere>
+
+        </a-entity>
+
+        <a-cone height = "1" src = "stripes.webp" scale ="1.25 1 1 " position = "-9.5 4 0"></a-cone>
+        <a-box height="1.2" width="0.1" depth="0.1" position="-9.5 4.5 0" src = "greytexture.webp"></a-box>
+        <a-triangle height="0.05" width="1.35" depth="1.35" position="-9 4.85 0" src = "redflag.jpg" side = "double"rotation = "0 0 -90" scale = "0.5 1 1"></a-triangle>
+        
+        </a-entity>        -->
+        
+
+
+
+
+
+
+
+
+</a-entity>
+
+
+      </a-scene>
+    </body>
 </html>
