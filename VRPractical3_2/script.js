@@ -1,6 +1,8 @@
-let carousel, surpriseBox, myTree, myTree2, myPacman;
+let scene, carousel, surpriseBox, myTree, myTree2, myPacman;
 
 window.addEventListener("DOMContentLoaded", function() {
+  scene = document.querySelector("a-scene");
+
   carousel = document.getElementById("carousel-arms");
   carousel.r = 0;
   carousel.dr = 1;
@@ -57,12 +59,17 @@ window.addEventListener("DOMContentLoaded", function() {
     myPacman.jump = true;
   })
 
+  
+  snowmanTemplate = document.getElementById("snowman");
+
 
 
   loop();
 });
 
 function loop() {
+
+ 
   if (carousel.rotate) {
     carousel.r += carousel.dr;
     carousel.setAttribute("rotation",{x:0, y:0, z: carousel.r});
