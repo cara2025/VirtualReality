@@ -1,27 +1,31 @@
-class mySnowman{
-    constructor(x,y,z){
+class mySnowman {
+    constructor(x, y, z) {
         this.x = x;
         this.y = y;
         this.z = z;
         this.dy = 0.5;
         this.rotate = false;
 
+
         this.obj = snowmanTemplate.cloneNode(true);
-        let snowman1 = new mySnowman(10,0,-3);
-        this.obj.setAttribute("position", {x:this.x, y:this.y, z:this.z});
 
-        this.obj.addEventListener("click", ()=>{
+
+        this.obj.setAttribute("position", { x: this.x, y: this.y, z: this.z });
+
+
+        this.obj.addEventListener("click", () => {
             this.rotate = true;
-        })
+            console.log("Clicked");
+        });
 
+     
         scene.append(this.obj);
-
-
     }
-    spin(){
-        if(this.rotate == true){
+
+    spin() {
+        if (this.rotate) {
             this.y += this.dy;
-            this.obj.setAttribute("rotation", {x:0,y:this.y,z:0});
+            this.obj.setAttribute("rotation", { x: 0, y: this.y, z: 0 });
         }
     }
 }

@@ -1,7 +1,18 @@
-let scene, carousel, surpriseBox, myTree, myTree2, myPacman;
+let scene, carousel, surpriseBox, myTree, myTree2, myPacman, snowman, snowman2, snowman3, tree3, tree4, tree5, tree6;
 
 window.addEventListener("DOMContentLoaded", function() {
   scene = document.querySelector("a-scene");
+  snowmanTemplate = document.querySelector("#snowman");
+  treeTemplate = document.querySelector("#tree");
+
+  snowman = new mySnowman(10, 1, -5); 
+  snowman2 = new mySnowman(-16, 1, -2); 
+  snowman3 = new mySnowman(7, 1 ,-20); 
+
+  tree3 = new treeClass(10,1,-10);
+  tree4 = new treeClass(8,1,-13);
+  tree5 = new treeClass(3,0,-20);
+  tree6 = new treeClass(0,0,-8);
 
   carousel = document.getElementById("carousel-arms");
   carousel.r = 0;
@@ -60,7 +71,7 @@ window.addEventListener("DOMContentLoaded", function() {
   })
 
   
-  snowmanTemplate = document.getElementById("snowman");
+
 
 
 
@@ -103,6 +114,13 @@ function loop() {
       myPacman.dy = 0.2; 
     }
   }
+  snowman.spin();
+  snowman2.spin();
+  snowman3.spin(); 
+  tree3.spindown();
+  tree4.spindown();
+  tree5.spindown();
+  tree6.spindown();
   myPacman.setAttribute("position", {x:myPacman.x,y:myPacman.y, z:2})
 
 

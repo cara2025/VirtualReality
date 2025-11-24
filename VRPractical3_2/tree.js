@@ -1,9 +1,7 @@
-class Tree {
+class treeClass {
   constructor(x, y, z) {
     
-    this.obj = document.getElementById("tree").cloneNode(true);
-    let tree1 = new Tree(10,9,2);
-    scene.append(tree1);
+    this.obj = treeTemplate.cloneNode(true);
 
 
     this.x = x;
@@ -13,6 +11,8 @@ class Tree {
     this.r = 0;     
     this.dr = 2;   
     this.fall = false;
+
+    this.obj.setAttribute("position", { x: this.x, y: this.y, z: this.z });
 
     scene.append(this.obj);
     
@@ -26,7 +26,7 @@ class Tree {
       this.y += this.dy;
       this.r += this.dr;
       this.obj.setAttribute("position", { x: this.x, y: this.y, z: this.z });
-      this.obj.setAttribute("rotation", { x: 0, y: this.r, z: 0 });
+      this.obj.setAttribute("rotation", {x:0,y:this.r,z:0});
     }
   }
 }
