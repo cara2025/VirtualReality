@@ -1,14 +1,15 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
-let scene, camera, target, ball, cones = [];
+let scene, camera, target, ball, cones, box2 = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
   target = document.querySelector("#target");
   // Challenge 2 - Create a variable for the second target
+  box2 = document.querySelector("#second-ball");
   ball = document.querySelector("#ball");
   ball.x = -1;
-  ball.dx = -0.002;
+  ball.dx = -0.2;
   
   setTimeout(loop,100);
 })
@@ -19,6 +20,7 @@ function loop(){
   ball.object3D.position.x = ball.x
   let d1 = distance(ball, target);
   //Challenge 3 - Store the distance between the ball and the second target
+  let d2 = distance(ball,box2);
 
   output.setAttribute("value",`d1= ${d1}\nd2=${d2}`);
 
@@ -29,6 +31,10 @@ function loop(){
   if(d1 < 1){
     ball.dx = -ball.dx;
   }
+  if(d2 < 1){
+    ball.dx = - ball.dx;
+  }
+
 
   window.requestAnimationFrame(loop);
 }
