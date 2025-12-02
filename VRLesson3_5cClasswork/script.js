@@ -23,10 +23,21 @@ function loop(){
      Note: Explore the Block class for an understanding of the 
      above two tasks.
   */
+  for(let block of blocks){
+    block.shrink();
+    if(dart != undefined && distance(dart.obj,block.obj)<1){
+      block.shot = true;
+    }
+    }
+  /* If the dart exists, the if loop works.
+  */
 
   if(dart){
     dart.fly();
   }
+  /* Just "dart" also basically says if the dart exists without having to set the != undefined
+  */
+
   window.requestAnimationFrame(loop);
 }
 
