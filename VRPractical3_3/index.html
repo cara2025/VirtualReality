@@ -3,12 +3,32 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="bullet.js"></script>
     <script src="script.js"></script>
+    <script src = "snowman.js"></script>
+    <script src = "ammobox.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-camera position="0 1.6 0"></a-camera>
+
+      <a-light type="point" color="#ffffff" intensity="10" distance="150" position = "2 25 -10"></a-light>
+
+      <a-plane position="0 0 -1" rotation="-90 0 0" width="200" height="200" src = "snowy.jpg" repeat="15 -15" ></a-plane>
+      <a-sky rotation="0 -90 0" side = "double" src = "sky.jpg" repeat="10 -10"></a-sky>
+      
+      <a-camera active id="mainCamera" position="0 1.6 0">
+        <a-cursor>
+        <a-text id="ammo_count" position="-3 1.5 -1" value="Ammo: " color="blue"></a-text>
+        <a-text id="enemies_killed" position="1.5 1.5 -1" value="Score: " color="blue"></a-text>
+        <a-text id="health" position="1.5 1 -1" value="Health: " color="blue"></a-text>
+        <a-text id="timer" position="-3 1 -1" value="Time: " color="blue"></a-text>
+        <a-text id="gameover" value ="GAME OVER" position="-2 0 -2" color="red" visible="false" scale="3 3 3"></a-text>
+        <a-text id="youwin" value ="YOU WIN!" position="-1.5 0 -2" color="red" visible="false" scale="3 3 3"></a-text>
+        <a-image src = "gun.png" position ="0.5 -0.5 0" ></a-image> 
+          
+        </a-cursor>
+      </a-camera>
+      <a-sphere radius = "1.5" position = "2 20 -10" src = "moon.webp" >
+        <a-light type="point" color="#ffffff" intensity="4" distance="100"></a-light>
+      </a-sphere>
     </a-scene>
   </body>
 </html>
