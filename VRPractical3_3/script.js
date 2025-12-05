@@ -10,6 +10,11 @@ window.addEventListener("DOMContentLoaded",function() {
   gameTxt = document.querySelector("#gameover");
   timerTxt = document.querySelector("#timer");
   winTxt = document.querySelector("#youwin");
+  gameOverImg = document.querySelector("#gameover_img");
+  winnerImg = document.querySelector("#youwin_img");
+  fullHealthImg = document.querySelector("#full_health");
+  halfHealthImg = document.querySelector("#half_health");
+  noHealthImg = document.querySelector("#no_health");
 
   window.addEventListener("keydown",function(e){
     //User can only fire with they press the spacebar and have sufficient ammo
@@ -47,19 +52,30 @@ function loop(){
         h -= 10;
         enemy.checkHit = true;
           if (h <= 0 && t > 0){
-            gameTxt.setAttribute("visible", true);
+            gameOverImg.setAttribute("visible", true);
   } 
   }
 } else {
    enemy.checkHit = false;
 }
 }
-  if (enemy_killed >= 10 && t > 0 && h > 0){
-    winTxt.setAttribute("visible", true);
+  if (enemy_killed >= 1 && t > 0 && h > 0){
+    winnerImg.setAttribute("visible", true);
   }
 
   if(bullet){
     bullet.fire();
+  }
+  if (t > 0 && h > 50){
+    fullHealthImg.setAttribute("visible", true);
+  }
+  if(t>0 && h<= 50){
+    fullHealthImg.setAttribute("visible", false);
+    halfHealthImg.setAttribute("visible", true);
+  }
+  if(t > 0 && h <= 10){
+    halfHealthImg.setAttribute("visible", false);
+    noHealthImg.setAttribute("visible", true);
   }
  
   window.requestAnimationFrame(loop);
