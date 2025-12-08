@@ -3,8 +3,8 @@ class Snowman{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dx = rnd(0.03,0.5);
-    this.dz = rnd(0.03,0.5);
+    this.dx = rnd(0.03,0.35);
+    this.dz = rnd(0.03,0.35);
     this.a = 0;
     this.da = 1;
     this.die = false;

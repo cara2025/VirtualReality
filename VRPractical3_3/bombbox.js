@@ -1,8 +1,9 @@
-class AmmoBox{
+class BombBox{
     constructor(x,y,z){
         this.x = x;
         this.y = y;
         this.z = z;
+        this.explode = false;
         this.obj = document.createElement("a-entity");
         let box = document.createElement("a-box");
         let bottom = document.createElement("a-box");
@@ -96,9 +97,10 @@ class AmmoBox{
 
         this.obj.setAttribute("position",{x:this.x, y:0.5, z:this.z});
         this.obj.setAttribute("visible", true);
-
+        
         bottom.addEventListener("click", ()=>{
-            ammo_count += 3;
+            h -= 20;
+            this.explode = true;
             bottom.setAttribute("visible", false);
             box.setAttribute("visible", false);
             side.setAttribute("visible", false);

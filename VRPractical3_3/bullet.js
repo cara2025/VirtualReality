@@ -28,9 +28,9 @@ class Bullet{
   }
   fire(){
 
-    this.obj.object3D.position.x += this.dx;
-    this.obj.object3D.position.y += this.dy;
-    this.obj.object3D.position.z += this.dz; 
+    this.obj.object3D.position.x += this.dx *6;
+    this.obj.object3D.position.y += this.dy *6;
+    this.obj.object3D.position.z += this.dz *6; 
 
     //this.obj.object3D.rotation.y = this.theta - Math.PI/2;
   }
