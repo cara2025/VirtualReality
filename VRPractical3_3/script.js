@@ -183,6 +183,8 @@ for (let bomb of bombs){
   }
   if (t > 0 && h > 50){
     fullHealthImg.setAttribute("visible", true);
+    halfHealthImg.setAttribute("visible", false);
+    noHealthImg.setAttribute("visible", false);
   }
   if(t>0 && h<= 50){
     fullHealthImg.setAttribute("visible", false);
@@ -195,6 +197,10 @@ for (let bomb of bombs){
   if (t <= 0 || h <= 0){
     gameOverImg.setAttribute("visible", true);
   }
+  if (winnerImg.getAttribute("visible") == true && enemy_killed >= 10){
+    return;
+  }
+
  
   window.requestAnimationFrame(loop);
 }
