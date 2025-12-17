@@ -1,4 +1,5 @@
 let scene, boxes = [];
+let rnd = (l,u) => Math.random()*(u-l)+l;
 window.onload = function(){
   scene = document.querySelector("a-scene");
   /* Challenge
