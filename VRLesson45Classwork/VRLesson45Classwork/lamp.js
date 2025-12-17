@@ -20,13 +20,14 @@ class Lamp{
     */
    this.bulb.setAttribute("light","type: point; intensity: 0; castShadow: true");
     
-    this.bulb.onclick = ()=>{
+    this.bulb.addEventListener("click", ()=>{
       this.strength += this.dl;
       this.dl = -this.dl;
 
       // Challenge: Assign the bulb the light intensity represented by the strength
+      this.bulb.setAttribute("light", {intensity: this.strength});
     }
-    this.bulb.setAttribute("light", {intensity: this.strength});
+    );
     this.obj.append(this.bulb);
     this.obj.setAttribute("position",{x:x,y:y,z:z});
     scene.append(this.obj);
